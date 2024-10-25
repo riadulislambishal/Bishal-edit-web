@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BISHAL'S EDIT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Side Menu -->
+    <div class="menu-bar">
+        <h2>Contact</h2>
+        <p><a href="https://wa.me/+971568679647">WhatsApp</a></p>
+        <a href="https://facebook.com/https://www.facebook.com/profile.php?id=100040446228900">
+            <img src="facebook-icon.png" alt="Facebook" class="icon">
+        </a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <header>
+            <h1>BISHAL'S EDIT</h1>
+        </header>
+
+        <div class="editor">
+            <!-- Photo Upload -->
+            <input type="file" id="upload-image" accept="image/*">
+            <canvas id="image-canvas"></canvas>
+
+            <!-- Editing Tools -->
+            <div class="filters">
+                <button onclick="applyFilter('grayscale')">Grayscale</button>
+                <button onclick="applyFilter('sepia')">Sepia</button>
+                <button onclick="applyFilter('brightness')">Brightness</button>
+                <button onclick="applyFilter('vibrance')">Vibrance</button>
+            </div>
+
+            <!-- Download Button -->
+            <button id="download-btn" onclick="downloadImage()">Download</button>
+        </div>
+
+        <!-- Logo Integration -->
+        <div class="logo-section">
+            <p>Add Your Logo:</p>
+            <input type="file" id="/storage/emulated/0/Pictures/Picsart/Picsart_24-10-23_10-54-21-981.png" accept="image/png" onchange="displayLogo()">
+            <img id="logo-preview" alt="Your Logo" style="display:none;">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
